@@ -159,13 +159,6 @@ This project demonstrates:
 * **Modular system design**.
 * Practical problem-solving using **automation**.
 
-**Suitable for:**
-
-* Software Engineering coursework.
-* AI/ML academic projects.
-* Technical portfolios.
-* Resume and LinkedIn project showcases.
-
 ---
 
 ## Author
