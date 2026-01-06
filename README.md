@@ -15,22 +15,22 @@ Job seekers often struggle to customize their resumes for individual job descrip
 ## Solution Overview
 
 The system automates resume tailoring by:
-- Connecting to external job boards (such as LinkedIn or Indeed)
-- Scraping job descriptions directly from provided URLs
-- Parsing and analyzing resumes using NLP techniques
-- Matching resume content against scraped job requirements
-- Generating improvement suggestions to enhance relevance and impact
+- Connecting to external job boards (such as LinkedIn or Indeed).
+- Scraping job descriptions directly from provided URLs.
+- Parsing and analyzing resumes using NLP techniques.
+- Matching resume content against scraped job requirements.
+- Generating improvement suggestions to enhance relevance and impact.
 
 ---
 
 ## Key Features
 
-- **Automated Job Description Scraping** – Extracts skills, responsibilities, and keywords from job posts  
-- **Resume Parsing & Semantic Analysis** – Understands resume structure and content  
-- **AI-Based Resume–Job Matching** – Evaluates compatibility based on skills and experience  
-- **Actionable Recommendations** – Clear suggestions to improve resume alignment  
-- **Modern Web Frontend** – Built using React and Next.js  
-- **Modular Design** – Scalable and extensible architecture  
+- **Automated Job Description Scraping**: Extracts skills, responsibilities, and keywords from job posts.
+- **Resume Parsing & Semantic Analysis**: Understands resume structure and content.
+- **AI-Based Resume–Job Matching**: Evaluates compatibility based on skills and experience.
+- **Actionable Recommendations**: Clear suggestions to improve resume alignment.
+- **Modern Web Frontend**: Built using React and Next.js.
+- **Modular Design**: Scalable and extensible architecture.
 
 ---
 
@@ -38,133 +38,154 @@ The system automates resume tailoring by:
 
 ```mermaid
 graph LR
-    User --> Frontend[Frontend (React / Next.js)]
-    Frontend --> Backend[Backend API (Python)]
-    Backend --> Scraper[Job Scraper]
-    Scraper --> JobSites[(Job Sites)]
+    User --> Frontend["Frontend (React / Next.js)"]
+    Frontend --> Backend["Backend API (Python)"]
+    Backend --> Scraper["Job Scraper"]
+    Scraper --> JobSites[("Job Sites")]
     JobSites --> Scraper
-    Scraper --> Analyzer[Resume Analyzer]
-    Analyzer --> AI[AI Recommendation Engine]
+    Scraper --> Analyzer["Resume Analyzer"]
+    Analyzer --> AI["AI Recommendation Engine"]
 
+```
 
+---
 
-⸻
+## Tech Stack
 
-Tech Stack
+### Frontend
 
-Frontend
-	•	React
-	•	Next.js
-	•	JavaScript
-	•	CSS
+* **React**
+* **Next.js**
+* **JavaScript**
+* **CSS**
 
-Backend
-	•	Python
-	•	Natural Language Processing libraries
-	•	Web scraping tools (JobSpy)
+### Backend
 
-Tools and Platforms
-	•	Git
-	•	GitHub
-	•	REST APIs
+* **Python**
+* **Natural Language Processing libraries**
+* **Web scraping tools (JobSpy)**
 
-⸻
+### Tools and Platforms
 
-How to Run Locally
+* **Git**
+* **GitHub**
+* **REST APIs**
 
-1. Clone the Repository
+---
 
-git clone https://github.com/aryannaresh04/resume-improvement-job-scrapper.git
+## How to Run Locally
+
+### 1. Clone the Repository
+
+```bash
+git clone [https://github.com/aryannaresh04/resume-improvement-job-scrapper.git](https://github.com/aryannaresh04/resume-improvement-job-scrapper.git)
 cd resume-improvement-job-scrapper
 
+```
 
-⸻
+### 2. Backend Setup
 
-2. Backend Setup
+Navigate to the root directory to set up the Python backend.
 
+```bash
+# Create virtual environment
 python -m venv venv
 
 # Activate virtual environment
-# macOS / Linux
+# For macOS / Linux:
 source venv/bin/activate
-
-# Windows
+# For Windows:
 # venv\Scripts\activate
 
+# Install dependencies
 pip install -r requirements.txt
+
+# Run the backend server
 python main.py
 
+```
 
-⸻
+### 3. Frontend Setup
 
-3. Frontend Setup
+Open a new terminal and navigate to the frontend directory.
 
+```bash
 cd resume-agent-frontend
+
+# Install dependencies
 npm install
+
+# Start the development server
 npm run dev
 
-Access the application at:
+```
 
-http://localhost:3000
+Access the application at: **http://localhost:3000**
 
+---
 
-⸻
+## Example Workflow
 
-Example Workflow
-	1.	User inputs a job description URL
-	2.	Job scraper extracts and processes job requirements
-	3.	User provides resume content
-	4.	Resume is analyzed using NLP techniques
-	5.	Resume is matched against scraped job requirements
-	6.	Resume improvement suggestions are generated and displayed
+1. **Input**: User inputs a job description URL.
+2. **Scrape**: Job scraper extracts and processes job requirements.
+3. **Upload**: User provides resume content.
+4. **Analyze**: Resume is analyzed using NLP techniques.
+5. **Match**: Resume is matched against scraped job requirements.
+6. **Result**: Resume improvement suggestions are generated and displayed.
 
-⸻
+---
 
-Use Cases
-	•	Resume optimization for specific job roles
-	•	ATS-friendly resume enhancement
-	•	Career preparation assistance
-	•	Academic demonstration of AI and full-stack development
-	•	Portfolio project for software engineering and AI roles
+## Use Cases
 
-⸻
+* Resume optimization for specific job roles.
+* ATS-friendly resume enhancement.
+* Career preparation assistance.
+* Academic demonstration of AI and full-stack development.
+* Portfolio project for software engineering and AI roles.
 
-Future Enhancements
-	•	User authentication and profile management
-	•	Resume scoring and ATS compatibility metrics
-	•	LLM-based resume rewriting and enhancement
-	•	PDF resume upload and export
-	•	Cloud deployment and scalability
-	•	Support for multiple job platforms
+---
 
-⸻
+## Future Enhancements
 
-Academic and Professional Relevance
+* [ ] User authentication and profile management.
+* [ ] Resume scoring and ATS compatibility metrics.
+* [ ] LLM-based resume rewriting and enhancement.
+* [ ] PDF resume upload and export.
+* [ ] Cloud deployment and scalability.
+* [ ] Support for multiple job platforms.
+
+---
+
+## Academic and Professional Relevance
 
 This project demonstrates:
-	•	Application of AI and NLP techniques
-	•	Full-stack software engineering practices
-	•	Modular system design
-	•	Practical automation for real-world career problems
 
-⸻
+* Application of **AI and NLP techniques**.
+* **Full-stack software engineering** practices.
+* **Modular system design**.
+* Practical automation for real-world career problems.
 
-Author
+---
 
-Aryan Naresh
-Computer Science | Artificial Intelligence | Cyber Security
-GitHub: https://github.com/aryannaresh04
+## Author
 
-⸻
+**Aryan Naresh**
+*Computer Science | Artificial Intelligence | Cyber Security*
 
-License
+GitHub: [aryannaresh04](https://github.com/aryannaresh04)
 
-This project is intended for academic, learning, and portfolio purposes.
+---
 
-⸻
+## License
 
-Acknowledgements
+This project is intended for **academic, learning, and portfolio purposes**.
+
+---
+
+## Acknowledgements
 
 This project was developed as part of an academic exploration into AI-driven automation and software engineering best practices.
 
----
+```
+
+```
