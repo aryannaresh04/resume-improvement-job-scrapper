@@ -35,14 +35,13 @@ The system automates resume tailoring by:
 
 ## System Architecture
 
-```mermaid
+mermaid
 graph LR
-    User[User] --> Frontend[Frontend (React/Next.js)]
-    Frontend --> Backend[Backend API (Python)]
+    User[User] --> Frontend["Frontend (React/Next.js)"]
+    Frontend --> Backend["Backend API (Python)"]
     Backend --> Scraper[Job Scraper + Resume Analyzer]
     Scraper --> AI[AI-based Recommendation Engine]
 
-```
 
 ---
 
