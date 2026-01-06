@@ -60,25 +60,6 @@ User-> Frontend (React / Next.js)-> Backend API (Python)-> Job Scraper + Resume 
 
 ---
 
-## Project Structure
-
-resume-improvement-job-scrapper/
-│
-├── resume-agent-frontend/        # Frontend (Next.js + React)
-│   ├── src/                      # React components and pages
-│   ├── public/                   # Static assets
-│   ├── package.json              # Frontend dependencies
-│   └── README.md                 # Frontend documentation
-│
-├── main.py                       # Backend entry point
-├── job_scraper.py                # Job description scraping logic
-├── requirements.txt              # Backend dependencies
-│
-├── README.md                     # Project documentation
-└── .gitignore                    # Ignored files and folders
-
----
-
 ## How to Run Locally
 
 ### 1. Clone the Repository
