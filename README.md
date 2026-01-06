@@ -65,17 +65,17 @@ User-> Frontend (React / Next.js)-> Backend API (Python)-> Job Scraper + Resume 
 resume-improvement-job-scrapper/
 │
 ├── resume-agent-frontend/        # Frontend (Next.js + React)
-│   ├── src/
-│   ├── public/
-│   ├── package.json
-│   └── README.md
+│   ├── src/                      # React components and pages
+│   ├── public/                   # Static assets
+│   ├── package.json              # Frontend dependencies
+│   └── README.md                 # Frontend documentation
 │
 ├── main.py                       # Backend entry point
 ├── job_scraper.py                # Job description scraping logic
 ├── requirements.txt              # Backend dependencies
 │
-├── README.md
-└── .gitignore
+├── README.md                     # Project documentation
+└── .gitignore                    # Ignored files and folders
 
 ---
 
