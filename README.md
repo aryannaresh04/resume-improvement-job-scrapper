@@ -2,7 +2,7 @@
 
 An AI-powered full-stack application that scrapes job descriptions, analyzes resumes against job requirements, and provides intelligent, actionable resume improvement suggestions using natural language processing and agent-based reasoning.
 
-This project is designed as a Resume Improvement Agent, helping users tailor their resumes to specific job roles and improve job-fit quality.
+This project is designed as a Resume Improvement Agent, helping users tailor their resumes to specific job roles and improve job-fit quality and to also find jobs that are suited to them according to their resume.
 
 ---
 
@@ -36,19 +36,7 @@ The system automates resume tailoring by:
 
 ## System Architecture
 
-User
-|
-v
-Frontend (React / Next.js)
-|
-v
-Backend API (Python)
-|
-v
-Job Scraper + Resume Analyzer
-|
-v
-AI-based Recommendation Engine
+User-> Frontend (React / Next.js)-> Backend API (Python)-> Job Scraper + Resume Analyzer-> AI-based Recommendation Engine
 
 ---
 
