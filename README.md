@@ -185,7 +185,3 @@ This project is intended for **academic, learning, and portfolio purposes**.
 ## Acknowledgements
 
 This project was developed as part of an academic exploration into AI-driven automation and software engineering best practices.
-
-```
-
-```
