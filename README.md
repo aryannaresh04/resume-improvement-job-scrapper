@@ -2,7 +2,7 @@
 
 An AI-powered full-stack application that scrapes job descriptions, analyzes resumes against job requirements, and provides intelligent, actionable resume improvement suggestions using natural language processing and agent-based reasoning.
 
-This project is designed as a **Resume Improvement Agent**, helping users tailor their resumes to specific job roles to improve job-fit quality and helping them find jobs that are suited to them according to their resume.
+This project is designed as a **Resume Improvement Agent**, helping users tailor their resumes to specific job roles, improve job-fit quality, and identify jobs that best match their resume profile.
 
 ---
 
@@ -15,21 +15,22 @@ Job seekers often struggle to customize their resumes for individual job descrip
 ## Solution Overview
 
 The system automates resume tailoring by:
-- **Scraping** job descriptions from online sources.
-- **Parsing and analyzing** resumes using NLP techniques.
-- **Matching** resume content against job requirements.
-- **Generating** improvement suggestions to enhance relevance and impact.
+- Connecting to external job boards (such as LinkedIn or Indeed)
+- Scraping job descriptions directly from provided URLs
+- Parsing and analyzing resumes using NLP techniques
+- Matching resume content against scraped job requirements
+- Generating improvement suggestions to enhance relevance and impact
 
 ---
 
 ## Key Features
 
-- **Automated Job Description Scraping**: Extracts key details from job posts.
-- **Resume Parsing & Semantic Analysis**: Understands the structure and content of user resumes.
-- **AI-Based Resume–Job Matching**: Calculates fit based on skills and experience.
-- **Actionable Recommendations**: Specific suggestions to improve resume impact.
-- **Modern Web Frontend**: Clean interface built with React and Next.js.
-- **Modular Design**: Scalable architecture for future enhancements.
+- **Automated Job Description Scraping** – Extracts skills, responsibilities, and keywords from job posts  
+- **Resume Parsing & Semantic Analysis** – Understands resume structure and content  
+- **AI-Based Resume–Job Matching** – Evaluates compatibility based on skills and experience  
+- **Actionable Recommendations** – Clear suggestions to improve resume alignment  
+- **Modern Web Frontend** – Built using React and Next.js  
+- **Modular Design** – Scalable and extensible architecture  
 
 ---
 
@@ -37,149 +38,133 @@ The system automates resume tailoring by:
 
 ```mermaid
 graph LR
-    User[User] --> Frontend["Frontend (React/Next.js)"]
-    Frontend --> Backend["Backend API (Python)"]
-    Backend --> Scraper[Job Scraper + Resume Analyzer]
-    Scraper --> AI[AI-based Recommendation Engine]
+    User --> Frontend[Frontend (React / Next.js)]
+    Frontend --> Backend[Backend API (Python)]
+    Backend --> Scraper[Job Scraper]
+    Scraper --> JobSites[(Job Sites)]
+    JobSites --> Scraper
+    Scraper --> Analyzer[Resume Analyzer]
+    Analyzer --> AI[AI Recommendation Engine]
 ```
 
 
----
+⸻
 
-## Tech Stack
+Tech Stack
 
-### Frontend
+Frontend
+	•	React
+	•	Next.js
+	•	JavaScript
+	•	CSS
 
-* **Framework**: React, Next.js
-* **Language**: JavaScript
-* **Styling**: CSS
+Backend
+	•	Python
+	•	Natural Language Processing libraries
+	•	Web scraping tools (JobSpy)
 
-### Backend
+Tools and Platforms
+	•	Git
+	•	GitHub
+	•	REST APIs
 
-* **Language**: Python
-* **Core Logic**: Natural Language Processing (NLP) libraries
-* **Data Acquisition**: Web scraping tools
+⸻
 
-### Tools and Platforms
+How to Run Locally
 
-* **Version Control**: Git, GitHub
-* **Integration**: REST APIs
+1. Clone the Repository
 
----
-
-## How to Run Locally
-
-### 1. Clone the Repository
-
-```bash
-git clone [https://github.com/aryannaresh04/resume-improvement-job-scrapper.git](https://github.com/aryannaresh04/resume-improvement-job-scrapper.git)
+git clone https://github.com/aryannaresh04/resume-improvement-job-scrapper.git
 cd resume-improvement-job-scrapper
 
-```
 
-### 2. Backend Setup
+⸻
 
-Navigate to the root directory to set up the Python backend.
+2. Backend Setup
 
-```bash
-# Create virtual environment
 python -m venv venv
 
 # Activate virtual environment
-# For macOS / Linux:
+# macOS / Linux
 source venv/bin/activate
-# For Windows:
+
+# Windows
 # venv\Scripts\activate
 
-# Install dependencies
 pip install -r requirements.txt
-
-# Run the backend server
 python main.py
 
-```
 
-### 3. Frontend Setup
+⸻
 
-Open a new terminal and navigate to the frontend directory.
+3. Frontend Setup
 
-```bash
 cd resume-agent-frontend
-
-# Install dependencies
 npm install
-
-# Start the development server
 npm run dev
 
-```
+Access the application at:
 
-Access the application at: **http://localhost:3000**
+http://localhost:3000
 
----
 
-## Example Workflow
+⸻
 
-1. **Input**: User selects or inputs a job description URL.
-2. **Scrape**: System scrapes and processes the job requirements.
-3. **Upload**: User provides their current resume content.
-4. **Analyze**: Resume is analyzed using NLP techniques.
-5. **Compare**: Resume is matched against job requirements.
-6. **Result**: Improvement suggestions are generated and displayed to the user.
+Example Workflow
+	1.	User inputs a job description URL
+	2.	Job scraper extracts and processes job requirements
+	3.	User provides resume content
+	4.	Resume is analyzed using NLP techniques
+	5.	Resume is matched against scraped job requirements
+	6.	Resume improvement suggestions are generated and displayed
 
----
+⸻
 
-## Use Cases
+Use Cases
+	•	Resume optimization for specific job roles
+	•	ATS-friendly resume enhancement
+	•	Career preparation assistance
+	•	Academic demonstration of AI and full-stack development
+	•	Portfolio project for software engineering and AI roles
 
-* Resume optimization for specific job roles.
-* ATS-friendly resume improvement.
-* Career preparation tools.
-* Academic demonstration of AI and full-stack development.
-* Portfolio project for software engineering and AI roles.
+⸻
 
----
+Future Enhancements
+	•	User authentication and profile management
+	•	Resume scoring and ATS compatibility metrics
+	•	LLM-based resume rewriting and enhancement
+	•	PDF resume upload and export
+	•	Cloud deployment and scalability
+	•	Support for multiple job platforms
 
-## Future Enhancements
+⸻
 
-* [ ] User authentication and profile management.
-* [ ] Resume scoring and ATS compatibility metrics.
-* [ ] LLM-based resume rewriting and enhancement.
-* [ ] PDF resume upload and export.
-* [ ] Cloud deployment and scalability.
-* [ ] Support for multiple job platforms.
-
----
-
-## Academic and Professional Relevance
+Academic and Professional Relevance
 
 This project demonstrates:
+	•	Application of AI and NLP techniques
+	•	Full-stack software engineering practices
+	•	Modular system design
+	•	Practical automation for real-world career problems
 
-* Application of **AI and NLP techniques**.
-* **Full-stack software engineering** practices.
-* **Modular system design**.
-* Practical problem-solving using **automation**.
+⸻
 
----
+Author
 
-## Author
+Aryan Naresh
+Computer Science | Artificial Intelligence | Cyber Security
+GitHub: https://github.com/aryannaresh04
 
-**Aryan Naresh**
-*Computer Science | Artificial Intelligence | Cyber Security*
+⸻
 
-GitHub: [aryannaresh04](https://github.com/aryannaresh04)
+License
 
----
+This project is intended for academic, learning, and portfolio purposes.
 
-## License
+⸻
 
-This project is intended for **academic, learning, and portfolio purposes**.
-
----
-
-## Acknowledgements
+Acknowledgements
 
 This project was developed as part of an academic exploration into AI-driven automation and software engineering best practices.
 
-```
-
-```
+---
