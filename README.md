@@ -45,7 +45,7 @@ graph LR
     JobSites --> Scraper
     Scraper --> Analyzer[Resume Analyzer]
     Analyzer --> AI[AI Recommendation Engine]
-```
+
 
 
 ⸻
