@@ -1,6 +1,3 @@
-Here is the clean `README.md` code with all emojis removed.
-
-```markdown
 # Resume Improvement & Job Scraper Agent
 
 An AI-powered full-stack application that scrapes job descriptions, analyzes resumes against job requirements, and provides intelligent, actionable resume improvement suggestions using natural language processing and agent-based reasoning.
