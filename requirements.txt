@@ -4,6 +4,8 @@ uvicorn[standard]
 python-dotenv
 google-generativeai
 spacy
+pandas
+python-jobspy
 python-docx
 pdfplumber
 python-multipart
