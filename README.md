@@ -253,15 +253,6 @@ This project demonstrates:
 
 GitHub: [aryannaresh04](https://github.com/aryannaresh04)
 
----
-
-## License
-
-> **Unresolved:** the repository ships an **MIT License** (`LICENSE`), while this
-> README has historically described the project as being for **academic, learning, and
-> portfolio purposes only**. These two statements grant different rights and contradict
-> each other. This needs an owner decision — the licensing terms should not be relied on
-> until it is resolved.
 
 ---
 
